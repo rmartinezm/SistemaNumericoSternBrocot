@@ -14,11 +14,11 @@ Forma de Usar el programa:
   o bien
     $ java Programa mitexto.txt
     
-  Con la primera forma ($ java Practica06) se mostrara en terminal las intrucciones para
+  Con la primera forma ($ java Programa) se mostrara en terminal las intrucciones para
   introducir los numeros asi como un ejemplo.
   Los datos ingresados en termial serán puestos en un archivo entrada.txt. 
   
-  Con la segunda forma ($ java Practica06 mitexto.txt) el archivo mitexto.txt es cualquier archivo
+  Con la segunda forma ($ java Programa mitexto.txt) el archivo mitexto.txt es cualquier archivo
   .txt que sera tomado como entrada al programa y realizara las operaciones necesarias para regresar
   las cadenas de L's y R's de las parejas ordenadas en el .txt
   IMPORTANTE: El archivo .txt que sea ingresado tiene que tener la pareja ordenada "1 1", si no 
