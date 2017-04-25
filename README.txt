@@ -15,36 +15,36 @@ Forma de Usar el programa:
     $ java Programa mitexto.txt
     
   Con la primera forma ($ java Programa) se mostrara en terminal las intrucciones para
-  introducir los numeros asi como un ejemplo.
+  introducir los numeros así como un ejemplo.
   Los datos ingresados en termial serán puestos en un archivo entrada.txt. 
   
   Con la segunda forma ($ java Programa mitexto.txt) el archivo mitexto.txt es cualquier archivo
-  .txt que sera tomado como entrada al programa y realizara las operaciones necesarias para regresar
+  .txt que sera tomado como entrada al programa y realizará las operaciones necesarias para regresar
   las cadenas de L's y R's de las parejas ordenadas en el .txt
   IMPORTANTE: El archivo .txt que sea ingresado tiene que tener la pareja ordenada "1 1", si no 
   es así, el programa solo escribira en terminal "El archivo no tiene el par ordenado "1 1", verifique." 
   
-  En ambos casos la salida será escrita en termial y tambien se generará un archivo
-  salida.txt en el que estaran los datos ingresados junto con su respectiva salida.
+  En ambos casos la salida será escrita en termial y también se generará un archivo
+  salida.txt en el que estarán los datos ingresados junto con su respectiva salida.
   
   
-Informacion sobre el programa:
+Información sobre el programa:
   ROBUSTEZ:
   El programa es Robusto ante estos tipos de errores:
     - Si una entrada no tiene numeros enteros.
     - Si una entrada tiene mas de dos numeros.
-    - Si una entrada tiene numeros negativos.
-    - Si una entrada tiene como numero entero al cero.
-    - Si una entrada es una linea vacía.
+    - Si una entrada tiene números negativos.
+    - Si una entrada tiene como número entero al cero.
+    - Si una entrada es una línea vacía.
     - Si una entrada tiene una pareja que no sean primos relativos.
   Si uno de estas entradas es ingresada al programa, este simplemente muestra el error como la 
-  salida de la linea en que se encontro el error.
+  salida de la linea en que se encontró el error.
   
   COMPLEJIDAD:
   El tiempo de crear un árbol Stern-Brocot es O(1). Ya que siempre se añade solamente la pareja
   ordenada (1,1).
     
-  El progama al utilizar un arbol binario ordenado para la representacion del sistema númerico de 
+  El progama al utilizar un árbol binario ordenado para la representación del sistema númerico de 
   Stern-Brocot requiere O(log n) operaciones en el caso medio para encontrar la entrada deseada, 
   en un árbol construido a partir de n claves aleatoreas, y en el peor caso con n claves puede
   implicar revisar las n claves, por lo tanto, la complejidad en tiempo es O(n).
@@ -61,11 +61,11 @@ Informacion sobre el programa:
     arbol a la pareja (3,2). Nuevamente aplicando recursivamente el algoritmo tenemos que la pareja 
     (5,3) es mayor respecto a (3,2) por ende, se agrega la siguiente pareja a la derecha, en este
     caso la nueva pareja es (5,3), al aplicar el algoritmo sobre (5,3) tenemos que es la pareja
-    deseada, ahora simplemente se va recursivamente desde este Vertice hasta la raiz del arbol para
-    crear la cadena de L's y R's que representa a esta pareja.
+    deseada, ahora simplemente se va recursivamente desde este Vértice hasta la raíz del árbol para
+    crear la cadena de L's y R's que representa a ésta pareja.
     
-  Nótese que el arbol solo añadio a los Vertices que eran necesarios para encontrar a la pareja,
-  en este ejemplo el árbol al terminar de buscar al elemento (5,3) contiene a las siguientes parejas:
+  Nótese que el árbol solo añadió a los Vértices que eran necesarios para encontrar a la pareja,
+  en éste ejemplo, el árbol al terminar de buscar al elemento (5,3) contiene a las siguientes parejas:
   {(1,1), (2,1), (3,2), (5,3)}. Esto es excelente para reducir la complejidad en espacio del
   algoritmo.
   
