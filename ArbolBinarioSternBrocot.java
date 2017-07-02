@@ -130,7 +130,7 @@ public class ArbolBinarioSternBrocot{
 		return dameRecursivo(raiz, po);
 	}
 
-	// Vertice nunca es null... ¿o si?...
+	// Vertice nunca es null.
 	private Vertice dameRecursivo(Vertice vertice, ParejaOrdenadaInt po){
 
 		int comparacion = po.compareTo(vertice.get());
@@ -204,7 +204,6 @@ public class ArbolBinarioSternBrocot{
 
 	public String cadenaSternBrocot(ParejaOrdenadaInt elemento){
 		
-		// Aqui marca el null pointer
 		Vertice vertice = dame(elemento);
 		if (vertice == null)
 			return "";
